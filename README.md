@@ -1,18 +1,5 @@
 # FinRevBench v1
 
-FinRevBench tests financial question answering over supplied SEC EDGAR disclosures when figures are revised, withdrawn from reliance, or restated. Every question comes with an information cutoff. Each question supplies its sources with their filing dates. The model must answer with what was available and still supportable at that cutoff.
-
-The benchmark evaluates question answering with supplied text evidence. The full dataset is a single evaluation set.
-
-## Contents
-
-| Track | Questions | Notes |
-|---|---:|---|
-| Temporal QA | 1,818 | 909 PRE/POST pairs. Each pair holds the financial target fixed and has distinct cutoffs and reference values. |
-| HFKR Source State | 1,085 | supported value at cutoff (338, of which 125 null), historically reported value (320), reporting-state sequence (258), withdrawal scope (169) |
-| HFKR Numerical | 717 | signed change (251), relative revision (251), liabilities-to-assets ratio (143), ratio revision (72) |
-| **Total** | **3,620** | 320 issuer groups, 264 HFKR reporting events, 640 distinct SEC filings |
-
 ## Files
 
 ```
